@@ -1,5 +1,16 @@
 
 body {
-    background-image: url("/assets/bonfirepic.jpg");
+     background-image: url("/assets/bonfirepic.jpg");
+}
+   
+.btn{
+
+    height: 100px;
+    width:  100px;
+    font-size: large;
+    font-style: normal;
+    cursor: pointer;
+    border-color: red;
+    
 
 }
