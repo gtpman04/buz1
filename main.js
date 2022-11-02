@@ -26,3 +26,13 @@ function changeBorder(){
     btn.style.borderColor="yellow";
 }
 
+const menu = document.getElementById("menu");
+
+Array.from(document.getElementsByClassName("menu-item"))
+.forEach((item, index) => {
+    item.onmouseover = () => {
+        menu.dataset.activIndex = index;
+
+    }
+
+})
