@@ -1,11 +1,12 @@
-
 body {
-     background-image: url("/assets/stockdogwalking1.jpg");
+    background-image: url("/assets/15.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-   
+
 .btn {
     height: 100px;
-    width:  100px;
+    width: 100px;
     font-size: large;
     font-style: normal;
     cursor: pointer;
@@ -13,71 +14,75 @@ body {
 }
 
 #menu {
-height: 100vh;
-display: flex;
-align-items: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 
 }
 
 .menu-item {
-color: white;
-font-size: clamp(3rem, 8vw, 8rem);
-font-family: "ibarra Real Nova", serif;
+    color: antiquewhite;
+    font-size: clamp(3rem, 8vw, 8rem);
+    font-family: "ibarra Real Nova", serif;
+    text-shadow: 11px 12px 0px rgb(29 149 143), 14px 14px 1px black;
 
-display: block;
-text-decoration: none;
-padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
-transition: opacity 400ms ease;
+    display: block;
+    text-decoration: none;
+    padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
+    transition: opacity 400ms ease;
 }
 
 #menu-background-pattern {
     height: 100vh;
     width: 100vw;
 
-    background-image: radial-gradient(
-        rgba(2255, 255, 255, 0.1) 9%,
-        transparent 9%
-    );
+    background-image: radial-gradient(rgba(255, 255, 255, 0.1) 9%,
+            transparent 9%);
     background-position: 0% 0%;
     background-size: 12vmin 12vmin;
 
-position: absolute;
-left: 0px;
-top: 0%;
-z-index: 1;
+    position: absolute;
+    left: 0px;
+    top: 0%;
+    z-index: 1;
 
-transition: opacity 800ms ease,
-background-size 800ms;
+    transition: opacity 800ms ease,
+        background-size 800ms;
 }
-#menu-items:hover ~ #menu-backgroun-pattern {
-background-size: 11vmin 11vmin;
-opacity: 0.5;
+
+#menu-items:hover~#menu-backgroun-pattern {
+    background-size: 11vmin 11vmin;
+    opacity: 0.5;
 
 }
+
 #menu-items {
-margin-left: clamp(4rem, 20vw, 48rem);
-z-index: 2;
+    margin-left: clamp(4rem, 20vw, 48rem);
+    z-index: 2;
 }
 
-#menu-items:hover > .menu-item {
-opacity: 0.3;
+#menu-items:hover>.menu-item {
+    opacity: 0.3;
 }
 
-#menu-items:hover > .menu-item:hover {
-opacity: 1;
+#menu-items:hover>.menu-item:hover {
+    opacity: 1;
 
 }
 
-#menu[data-activ-index="0"] > #menu-background-pattern {
-background-position: 0% -25%;
+#menu[data-activ-index="0"]>#menu-background-pattern {
+    background-position: 0% -25%;
 
 }
-#menu[data-activ-index="1"] > #menu-background-pattern {
+
+#menu[data-activ-index="1"]>#menu-background-pattern {
     background-position: 0% -50%;
 }
-    #menu[data-activ-index="2"] > #menu-background-pattern {
-        background-position: 0% -75%;
-    }
-        #menu[data-activ-index="3"] > #menu-background-pattern {
-            background-position: 0% -100%;
-        }
+
+#menu[data-activ-index="2"]>#menu-background-pattern {
+    background-position: 0% -75%;
+}
+
+#menu[data-activ-index="3"]>#menu-background-pattern {
+    background-position: 0% -100%;
+}
