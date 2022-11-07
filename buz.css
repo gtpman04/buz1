@@ -17,15 +17,13 @@ body {
     height: 100vh;
     display: flex;
     align-items: center;
-
 }
 
 .menu-item {
     color: antiquewhite;
-    font-size: clamp(3rem, 8vw, 8rem);
+    font-size: clamp(3rem, 4vw, 8rem);
     font-family: "ibarra Real Nova", serif;
-    text-shadow: 11px 12px 0px rgb(29 149 143), 14px 14px 1px black;
-
+    text-shadow: 3px 4px 0px rgb(29 149 143), 4px 4px 1px black;
     display: block;
     text-decoration: none;
     padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
@@ -35,29 +33,26 @@ body {
 #menu-background-pattern {
     height: 100vh;
     width: 100vw;
-
     background-image: radial-gradient(rgba(255, 255, 255, 0.1) 9%,
             transparent 9%);
     background-position: 0% 0%;
     background-size: 12vmin 12vmin;
-
     position: absolute;
     left: 0px;
     top: 0%;
     z-index: 1;
-
     transition: opacity 800ms ease,
-        background-size 800ms;
+        background-size 800ms ease,
+        background-posistion 800ms ease;
 }
 
-#menu-items:hover~#menu-backgroun-pattern {
+#menu-items:hover ~ #menu-background-pattern {
     background-size: 11vmin 11vmin;
     opacity: 0.5;
-
 }
 
 #menu-items {
-    margin-left: clamp(4rem, 20vw, 48rem);
+    margin-left: clamp(2rem, 3vw, 44rem);
     z-index: 2;
 }
 
@@ -67,22 +62,28 @@ body {
 
 #menu-items:hover>.menu-item:hover {
     opacity: 1;
-
 }
 
-#menu[data-activ-index="0"]>#menu-background-pattern {
+#menu[data-active-index="0"]>#menu-background-pattern {
     background-position: 0% -25%;
-
 }
 
-#menu[data-activ-index="1"]>#menu-background-pattern {
+#menu[data-active-index="1"]>#menu-background-pattern {
     background-position: 0% -50%;
 }
 
-#menu[data-activ-index="2"]>#menu-background-pattern {
+#menu[data-active-index="2"]>#menu-background-pattern {
     background-position: 0% -75%;
 }
 
-#menu[data-activ-index="3"]>#menu-background-pattern {
+#menu[data-active-index="3"]>#menu-background-pattern {
     background-position: 0% -100%;
+}
+
+#menu[data-active-index="4"]>#menu-background-pattern {
+    background-position: 0% -125%;
+}
+
+#menu[data-active-index="5"]>#menu-background-pattern {
+    background-position: 0% -150%;
 }
