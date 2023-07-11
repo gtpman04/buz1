@@ -124,3 +124,13 @@ margin-left: 0;
 padding: 10px 5px;
 text-align: justify;
 }
+
+
+.btnbtn {
+    height: 100px;
+    width: 100px;
+    font-size: large;
+    font-style: normal;
+    cursor: pointer;
+    border: rgb(0, 255, 55) solid 3px;
+}
