@@ -41,4 +41,4 @@ Array.from(document.getElementsByClassName("menu-item"))
         item.onmouseover = () => {
             menu.dataset.activeIndex = index;
         }
-    })   
+    }) 
