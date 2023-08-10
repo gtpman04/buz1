@@ -1,3 +1,21 @@
+header {
+position: relative;
+
+inset: 0rem;
+
+
+}
+
+h1 {
+color:gold;
+
+
+}
+h3  {
+color: royalblue;
+
+}
+
 body {
     background-image: url("assets/15.jpg");
     background-repeat: no-repeat;
@@ -115,14 +133,15 @@ body {
     position: absolute;
     transform: translate(17px, -34px);
 }
-.lorem {
+.ab {
 height: 500px;
-width: 300px;
+width: 500px;
 border: 1px solid black;
 background-color: rgba(255, 255, 255, 0.7);
 margin-left: 0;
 padding: 10px 5px;
 text-align: justify;
+
 }
 
 
