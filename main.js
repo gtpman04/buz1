@@ -8,7 +8,7 @@ btn.onclick = function () {
 }
 
 function changeText() {
-    btn.innerText = "that tickles";
+    btn.innerText = "Woof! Woof!";
 
     changeStyle();
     changeBorder();
