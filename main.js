@@ -29,6 +29,7 @@ function makeBtn() {
     element.classList.add("btnbtn");
     // element.addEventListener("click", colorChange);
     document.getElementById('srvbtn').append(element);
+    
 } 
 
 

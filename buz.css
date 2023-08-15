@@ -1,155 +1,176 @@
 header {
-position: relative;
-
-inset: 0rem;
-
-
+  position: relative;
+  inset: 0rem;
 }
 
-h1 {
-color: dodgerblue;
-
-
+#welcome {
+  border: 5px solid rgba(0, 0, 0, 0.979);
+  background-image: conic-gradient(
+    rgba(255, 0, 0, 0.767),
+    rgba(0, 255, 115, 0.596),
+    rgb(194, 1, 168),
+    rgba(0, 255, 255, 0.788),
+    rgba(140, 0, 255, 0.616)
+  );
+  position: absolute;
+  margin: 100px;
+  top: 0;
+  right: 0;
+  width: 55%;
+  height: 10%;
+  font-size: larger;
+  text-align-last: center;
+  text-shadow: 2px 2px 5px rgb(238, 255, 0);
+  color: royalblue;
 }
-h3  {
-color: royalblue;
 
+#services {
+  border: 3em;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 0rem;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  position: relative;
+  color: dodgerblue;
+  text-shadow: 1px 1px 5px rgb(0, 247, 255);
+}
+
+h3 {
+  color: royalblue;
 }
 
 body {
-    background-image: url("assets/15.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("assets/15.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .btn {
-    height: 100px;
-    width: 100px;
-    font-size: large;
-    font-style: normal;
-    cursor: pointer;
-    border-color: red;
+  height: 100px;
+  width: 100px;
+  font-size: large;
+  font-style: normal;
+  cursor: pointer;
+  border-color: red;
 }
 
 #menu {
-    height: 100vh;
-    display: flex;
-    align-items: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .menu-item {
-    color: antiquewhite;
-    font-size: clamp(3rem, 4vw, 8rem);
-    font-family: "ibarra Real Nova", serif;
-    text-shadow: 3px 4px 0px rgb(29 149 143), 4px 4px 1px black;
-    display: block;
-    text-decoration: none;
-    padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
-    transition: opacity 400ms ease;
+  color: antiquewhite;
+  font-size: clamp(3rem, 4vw, 8rem);
+  font-family: "ibarra Real Nova", serif;
+  text-shadow: 3px 4px 0px rgb(29 149 143), 4px 4px 1px black;
+  display: block;
+  text-decoration: none;
+  padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
+  transition: opacity 400ms ease;
 }
 
 #menu-background-pattern {
-    height: 100vh;
-    width: 100vw;
-    background-image: radial-gradient(rgba(255, 255, 255, 0.1) 9%,
-            transparent 9%);
-    background-position: 0% 0%;
-    background-size: 12vmin 12vmin;
-    position: absolute;
-    left: 0px;
-    top: 0%;
-    z-index: 1;
-    transition: opacity 800ms ease,
-        background-size 800ms ease,
-        background-posistion 800ms ease;
+  height: 100vh;
+  width: 100vw;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.1) 9%,
+    transparent 9%
+  );
+  background-position: 0% 0%;
+  background-size: 12vmin 12vmin;
+  position: absolute;
+  left: 0px;
+  top: 0%;
+  z-index: 1;
+  transition: opacity 800ms ease, background-size 800ms ease,
+    background-posistion 800ms ease;
 }
 
-#menu-items:hover~#menu-background-pattern {
-    background-size: 11vmin 11vmin;
-    opacity: 0.5;
+#menu-items:hover ~ #menu-background-pattern {
+  background-size: 11vmin 11vmin;
+  opacity: 0.5;
 }
 
 #menu-items {
-    margin-left: clamp(2rem, 3vw, 44rem);
-    z-index: 2;
+  margin-left: clamp(2rem, 3vw, 44rem);
+  z-index: 2;
 }
 
-#menu-items:hover>.menu-item {
-    opacity: 0.3;
+#menu-items:hover > .menu-item {
+  opacity: 0.3;
 }
 
-#menu-items:hover>.menu-item:hover {
-    opacity: 1;
+#menu-items:hover > .menu-item:hover {
+  opacity: 1;
 }
 
-#menu[data-active-index="0"]>#menu-background-pattern {
-    background-position: 0% -25%;
+#menu[data-active-index="0"] > #menu-background-pattern {
+  background-position: 0% -25%;
 }
 
-#menu[data-active-index="1"]>#menu-background-pattern {
-    background-position: 0% -50%;
+#menu[data-active-index="1"] > #menu-background-pattern {
+  background-position: 0% -50%;
 }
 
-#menu[data-active-index="2"]>#menu-background-pattern {
-    background-position: 0% -75%;
+#menu[data-active-index="2"] > #menu-background-pattern {
+  background-position: 0% -75%;
 }
 
-#menu[data-active-index="3"]>#menu-background-pattern {
-    background-position: 0% -100%;
+#menu[data-active-index="3"] > #menu-background-pattern {
+  background-position: 0% -100%;
 }
 
-#menu[data-active-index="4"]>#menu-background-pattern {
-    background-position: 0% -125%;
+#menu[data-active-index="4"] > #menu-background-pattern {
+  background-position: 0% -125%;
 }
 
-#menu[data-active-index="5"]>#menu-background-pattern {
-    background-position: 0% -150%;
+#menu[data-active-index="5"] > #menu-background-pattern {
+  background-position: 0% -150%;
 }
 
 .square {
-    height: 50px;
-    width: 50px;
-    background-color: darkorange;
-    display: flex;
-    position: relative;
-
+  height: 50px;
+  width: 50px;
+  background-color: darkorange;
+  display: flex;
+  position: relative;
 }
 
 .circle {
-    height: 25px;
-    width: 25px;
-    background-color: rgba(75, 9, 180, 0.774);
-    border: 5px solid black;
-    border-radius: 50px;
-    position: absolute;
-    transform: translate(7px, -42px);
+  height: 25px;
+  width: 25px;
+  background-color: rgba(75, 9, 180, 0.774);
+  border: 5px solid black;
+  border-radius: 50px;
+  position: absolute;
+  transform: translate(7px, -42px);
 }
 
 .circle2 {
-
-    height: 12px;
-    width: 14px;
-    background-color: white;
-    position: absolute;
-    transform: translate(17px, -34px);
+  height: 12px;
+  width: 14px;
+  background-color: white;
+  position: absolute;
+  transform: translate(17px, -34px);
 }
 .ab {
-height: 500px;
-width: 500px;
-border: 1px solid black;
-background-color: rgba(255, 255, 255, 0.7);
-margin-left: 0;
-padding: 10px 5px;
-text-align: justify;
-
+  height: 500px;
+  width: 500px;
+  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-left: 0;
+  padding: 10px 5px;
+  text-align: justify;
 }
 
-
-.btnbtn {
-    height: 100px;
-    width: 100px;
-    font-size: large;
-    font-style: normal;
-    cursor: pointer;
-    border: rgb(0, 255, 55) solid 3px;
+.btn {
+  height: 100px;
+  width: 100px;
+  font-size: large;
+  font-style: normal;
+  cursor: pointer;
+  border: rgb(0, 255, 55) solid 3px;
 }
